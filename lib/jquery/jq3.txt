@@ -1,0 +1,138 @@
+Effect : 
+
+8-slideUp()
+
+9-slideDown()
+
+10-slideToggle()
+
+Syntax:
+
+$("Element").Effect(spped,function(){
+
+
+});
+
+Example:
+one:-
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").slideUp(3000,function(){
+            $("div").slideDown(2000);
+        });
+    }); 
+});
+
+two:
+$(document).ready(function(){
+ $("button").click(function(){
+
+     $(".class1").slideToggle(3000);
+     $(".class2").slideToggle(3000);
+     
+ });
+});
+------------------------------------------------------------------------------------------------------
+This ----------------> Jq
+
+Example:-
+
+$(document).ready(function(){
+
+ $("button").click(function(){
+
+     $(".class1").slideUp(3000);
+
+     $(".class2").slideDown(3000);
+     
+     $(this).slideUp(7000);
+ });
+
+
+});
+-------------------------------------------------------------------------------------------------
+animate()  :- 
+
+Syntax:-
+
+$("Element").animate({Multi animate Css}, spped,function(){
+
+
+});
+
+
+Example One:-
+
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $(".class1").animate(
+            {width : "400px",
+             height : "300px",
+             borderRadius : "40px"}
+            ,3000,function(){
+                $(this).fadeOut(1000);
+        });
+    });
+});
+
+
+
+Example two :
+
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $(".class1").animate({width : "400px",
+                              height: "300px",
+                              borderRadius : "40px"},10000,function(){
+                                  $(this).slideUp(10000);
+                              });
+    });
+});
+-----------------------------------------------------------------------------------------------------
+Stop():-
+
+Syntax:-
+Stop(clearQueue,goToEnd); ---- stop(f,f);
+
+
+Example one:-
+
+$(document).ready(function(){
+    $(".start").click(function(){
+        $(".class1").animate({width : "400px"},5000);
+        $(".class1").animate({height : "400px"},5000);
+        $(".class1").animate({borderRadius : "40px"},5000);
+        $(".class1").animate({fontSize : "30px"},5000);
+        $(".class1").animate({top : "100px"},5000);
+        $(".class1").animate({opacity : "0.4"},5000);
+    });
+
+    $(".stop").click(function(){
+        $("div").stop();
+    });
+});
+--------------------------------------------------------------------------------------------------------------------------
+Chain ---------------------------
+Example :-
+
+$(document).ready(function(){
+    $(".start").click(function(){
+
+        $(".class1")
+        .animate({width : "400px"},500)
+        .animate({height : "400px"},500)
+        .animate({borderRadius : "40px"},500)
+        .animate({fontSize : "30px"},500)
+        .animate({backGroundColor : "#000000"},500)
+        .animate({opacity : "0.4"},500);
+
+    });
+
+   
+});
+
+
+
+
+
+

@@ -1,0 +1,124 @@
+1- Dimensions :- 
+
+A- width()
+Example one:-
+
+$(document).ready(function(){
+    /*Iam get width div*/
+    var c = $(".all").width();
+    console.log(c);
+    /*Set Width*/
+    var v = $(".all").width(600);
+    console.log(v);
+});
+
+
+- innerWidth()
+Example one :-
+
+$(document).ready(function(){
+    /*inner(height & width)*/
+   console.log($(".all").innerWidth());
+   console.log($(".all").innerHeight());
+   //inner(Height // width) add padding
+   //Nots : the number one in output that diffrents betwen in tag body and tag html;
+});
+
+
+
+
+- outerWidth()
+Example one:-
+
+$(document).ready(function(){
+    /*outer (height : width)*/
+    console.log($(".all").outerWidth());
+    console.log($(".all").outerHeight());
+
+    //outer(Width: height) add all animate padding border box-sizing ------- ddd;
+});
+--------------------------------------------------------------------------------------------------------------------
+B-height()
+Example one :-
+$(document).ready(function(){
+    /*Iam get heigth div*/
+    var c = $(".all").height();
+    console.log(c);
+    /*Set height*/
+    var v = $(".all").height(600);
+    console.log(v);
+});
+
+
+-innerHeight()
+Example one :-
+
+$(document).ready(function(){
+    /*inner(height & width)*/
+   console.log($(".all").innerWidth());
+   console.log($(".all").innerHeight());
+   //inner(Height // width) add padding
+   //Nots : the number one in output that diffrents betwen in tag body and tag html;
+});
+
+-outerHeight()
+Example one :-
+$(document).ready(function(){
+    /*outer (height : width)*/
+    console.log($(".all").outerWidth());
+    console.log($(".all").outerHeight());
+
+    //outer(Width: height) add all animate padding border box-sizing ------- ddd;
+});
+
+---------------------------------------------------------------------------------------------------------------------
+c- document()
+- document.width()
+- document.height()
+
+Example one:-
+$(document).ready(function(){
+    /*body*/
+    console.log($("body").width());
+    console.log($("body").height());
+    /*html*/
+    console.log($("html").width());
+    console.log($("html").height());
+    /*document*/
+    console.log($(document).width());
+    console.log($(document).height());
+
+    /*Set width in class win*/
+    $(".win").width($(document).width());
+    $(".win").height($(document).height());
+});
+
+$(document).ready(function(){
+
+    /*Set width in class win*/
+    var doc = $(document),
+        myCLass = $(".win");
+        myCLass.width(doc.width());
+        myCLass.height(doc.height());
+});
+--------------------------------
+Example for all
+
+$(document).ready(function(){
+    $(".child1").click(function(){
+        $(this).width("+=" + 50);
+        $(".child2").width("-=" + 50);
+    });
+    $(".child2").click(function(){
+        $(this).width("+=" + 50);
+        $(".child1").width("-=" + 50);
+    });
+});
+
+Example :-
+
+$(document).ready(function(){
+      var x = $(".win").outerHeight();
+      console.log(x);
+      $(".div2").css("top",x);
+});

@@ -1,0 +1,229 @@
+Set & Get (Element And Attributs);
+
+1- text() --- > textContent
+Get:-
+
+$(document).ready(function(){
+    $(".btn").click(function(){
+        var x = $("p").text();//Get
+        console.log(x);
+    });
+});
+Set:
+
+$(document).ready(function(){
+    $(".btn").click(function(){
+        var x = $("p").text("hello");//set
+        console.log(x);
+    });
+});
+
+2- html() -----> innerHTML
+Get:-
+$(document).ready(function(){
+    $(".btn").click(function(){
+        var x = $("div").html();//get
+        console.log(x);
+    });
+});
+Set:
+
+$(document).ready(function(){
+    $(".btn").click(function(){
+        var x = $("div").html("Hello");//set
+        console.log(x);
+    });
+});
+
+3- val() -------> value
+Get:-
+$(document).ready(function(){
+    $(".btn").click(function(){
+       var x = $("input").val();//get
+       console.log(x);
+    });
+});
+Set:
+$(document).ready(function(){
+    $(".btn").click(function(){
+       var x = $("input").val("20");//set
+       console.log(x);
+    });
+});
+-------------------------------------------------------------------
+Set & Get (Attribute):
+
+4- attr()
+get: === GetAttriubut In JavaScript 
+$(document).ready(function(){
+    $(".btn").click(function(){
+      var x =  $("input").attr("class");//get
+      console.log(x);
+    });
+});
+
+
+set:
+
+$(document).ready(function(){
+    $(".btn").click(function(){
+        //Add one attribut
+      var x =  $("input").attr("class","ali");//set
+      console.log(x);
+    });
+});
+
+$(document).ready(function(){
+    $(".btn").click(function(){
+        //Add multi attribut
+      var x =  $("input").attr({"class" : "ali",
+                                 "id" : "ayser",
+                                 "value" : "ameer",
+                                 "type" : "ez"
+      });//set
+      console.log(x);
+    });
+});
+--------------------------------------------------------------------------------------------------------------------------------
+Add Element
+1- Append()
+2- prepend()
+3- AppendTo()
+4- prependTo()
+5- after()
+6- befor()
+
+
+-------
+append : add Element inside but last div.
+
+prepend : add Element inside but first div.
+
+Exmaple One:-
+$(document).ready(function(){
+    var myDiv;
+    myDiv = $(".div1");
+
+    $(".btn1").click(function(){
+        myDiv.prepend("<p>Hello</p>")
+    });
+    $(".btn2").click(function(){
+        myDiv.append("<p>Hi</p>")
+    });
+});
+Example two Add Attribute:
+$(document).ready(function(){
+    var myDiv;
+    myDiv = $(".div1");
+
+    $(".btn1").click(function(){
+        myDiv.prepend("<p class = "+ "hamam" +">Hello</p>")
+    });
+    $(".btn2").click(function(){
+        myDiv.append("<p>Hi</p>")
+    });
+});
+
+-----------------------------------------------------------------
+after: add Element outsid in div last. 
+
+befor: add Element outsid in div Firset.
+$(document).ready(function(){
+    var myDiv;
+    myDiv = $(".div1");
+
+    $(".btn1").click(function(){
+        myDiv.prepend("<p class = "+ "hamam" +">Hello</p>")
+    });
+    $(".btn2").click(function(){
+        myDiv.append("<p class = "+ "hamam" +">Hi</p>")
+    });
+    $(".btn3").click(function(){
+        myDiv.after("<p class = "+ "hamam" +">after</p>");
+    });
+    $(".btn4").click(function(){
+        myDiv.before("<p class = "+ "hamam" +">befor</p>");
+    });
+});
+-----------------------------------------------------------------------------------------
+appendTo & prependTo;
+
+- create text and add of Div
+
+ $(".btn5").click(function(){
+       $("<p>AppendTo</p>").appendTo(myDiv);
+    });
+
+- add tag to container (clone and replace);
+
+$(".btn6").click(function(){
+       $("h1").appendTo(myDiv);
+     });
+-- add attribute 
+ $(".btn7").click(function(){
+        myDiv.appendTo("#Ez");
+      });
+
+
+all Example
+//html
+   <h1>Ayser</h1>
+        <div class="div1">
+            <!--prepend-->
+            this is div
+            <!--Append-->
+        </div>
+
+        <button class="btn1">prepend</button>
+        <button class="btn2">apend</button>
+        <button class="btn3">after</button>
+        <button class="btn4">befor</button>
+        <button class="btn5">appendTo</button>
+        <button class="btn6">appendToH1</button>
+        <button class="btn7">appendToId</button>
+        <div id="Ez">Ez</div>
+        <style>
+            .hamam{
+                color: red;
+            }
+            #Ez{
+                background-color: aqua;
+            }
+        </style>
+
+
+
+
+
+
+
+
+
+// jq
+$(document).ready(function(){
+    var myDiv;
+    myDiv = $(".div1");
+
+    $(".btn1").click(function(){
+        myDiv.prepend("<p class = "+ "hamam" +">Hello</p>")
+    });
+    $(".btn2").click(function(){
+        myDiv.append("<p class = "+ "hamam" +">Hi</p>")
+    });
+    $(".btn3").click(function(){
+        myDiv.after("<p class = "+ "hamam" +">after</p>");
+    });
+    $(".btn4").click(function(){
+        myDiv.before("<p class = "+ "hamam" +">befor</p>");
+    });
+
+    $(".btn5").click(function(){
+       $("<p>AppendTo</p>").appendTo(myDiv);
+    });
+    $(".btn6").click(function(){
+       $("h1").appendTo(myDiv);
+     });
+     $(".btn7").click(function(){
+        myDiv.appendTo("#Ez");
+      });
+});

@@ -1,0 +1,97 @@
+Syntax:-
+
+-First Syntax
+$(document).ready(function(){
+
+
+
+});
+
+-Secound syntax:-
+$(function(){
+
+
+
+});
+---------------------------------------------------------------------------------------------------------
+($)----
+1- have yourself in jquery
+2- cashing to Element in Html
+-----------------------------------------------
+documetn : documentashin ----------> Dom  
+
+function : Functions
+---------------------------------------------------------------------------------------------------------------
+ready :-
+(subort in css)
+----------------------------------------------------------------------------------------------------------------
+Whats the mening Subort in css:- 
+tag name <p></p>
+
+p{
+
+
+}
+-classs name
+<p class="test"></p>
+
+.test{
+
+
+}
+- ID name 
+<p id="Doc"></p>
+
+#Doc{
+
+
+}
+
+- Nesting
+
+<div>
+<p></p>
+</div>
+
+div p{
+
+
+}
+-----------------------------------------------------------------------------------------------------------------
+Event in j query:-
+1-click
+Synatx:-
+
+$("Cashing in Element").click(function(){
+
+
+});
+
+2-dblclick
+
+$("Cashing in Element").dblclick(function(){
+
+
+});
+
+3- mouseenter
+$("Cashing in Element").mouseenter(function(){
+
+
+});
+4- mouseleave
+ $("Cashing in Element").mouseleave(function(){
+
+
+});
+
+5- hover
+
+$("Cashing in Element").hover(function(){
+
+/*mouseenter*/
+
+},function(){
+/*mouse leave*/
+
+});

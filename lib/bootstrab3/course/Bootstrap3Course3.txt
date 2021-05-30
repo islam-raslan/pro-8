@@ -1,0 +1,95 @@
+Course 3:-
+Carousel to slide:-
+
+Example One-
+<div class="carousel slide" id="islam">
+
+              <ol class="carousel-indicators">
+
+                  <li class="active" data-target="#islam" data-slide-to="0"></li>
+                  <li data-target="#islam" data-slide-to="1"></li>
+                  <li data-target="#islam" data-slide-to="2"></li>
+                  <li data-target="#islam" data-slide-to="3"></li>
+                  
+              </ol>
+
+              <div class="carousel-inner">
+
+                <div class="item active">
+                    <img src="../img/work1.jpg">
+                    <div class="carousel-caption">
+                        <h1>ImgOne</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non deleniti officiis possimus tempora voluptas corrupti eos temporibus consequatur. Vitae, quia ad deleniti iure illo quidem? Repellendus soluta aut velit.</p>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="../img/work2.jpg">
+                    <div class="carousel-caption">
+                        <h1>ImgTwo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non deleniti officiis possimus tempora voluptas corrupti eos temporibus consequatur. Vitae, quia ad deleniti iure illo quidem? Repellendus soluta aut velit.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../img/work3.jpg">
+                    <div class="carousel-caption">
+                        <h1>ImgThree</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non deleniti officiis possimus tempora voluptas corrupti eos temporibus consequatur. Vitae, quia ad deleniti iure illo quidem? Repellendus soluta aut velit.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="../img/work4.jpg">
+                    <div class="carousel-caption">
+                        <h1>ImgFor</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non deleniti officiis possimus tempora voluptas corrupti eos temporibus consequatur. Vitae, quia ad deleniti iure illo quidem? Repellendus soluta aut velit.</p>
+                    </div>
+                </div>
+              </div>
+
+              <a href="#islam" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+              <a href="#islam" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+          </div>
+
+---------------------------
+Features:-
+ <div class="feat text-center">
+              <div class="container">
+                  <h1>Features</h1>
+                  <div class="row">
+                      <div class="col-lg-3 col-md-6">
+                          <h4>About</h4>
+                          <span class="glyphicon glyphicon-thumbs-down"></span>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloribus nesciunt optio consequuntur, esse tempora ratione voluptatibus ea unde voluptatem, assumenda eligendi asperiores iure sit cum mollitia maiores nulla similique?</p>
+                          <button class="btn btn-primary">Click one</button>
+                          <button class="btn btn-secondary">Click Two</button>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                          <h4>Contact</h4>
+                          <span class="glyphicon glyphicon-thumbs-up"></span>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloribus nesciunt optio consequuntur, esse tempora ratione voluptatibus ea unde voluptatem, assumenda eligendi asperiores iure sit cum mollitia maiores nulla similique?</p>
+                          <button class="btn btn-success">Click one</button>
+                          <button class="btn btn-danger">Click Two</button>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                          <h4>Section</h4>
+                          <span class="glyphicon glyphicon-hand-right"></span>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloribus nesciunt optio consequuntur, esse tempora ratione voluptatibus ea unde voluptatem, assumenda eligendi asperiores iure sit cum mollitia maiores nulla similique?</p>
+                          <button class="btn btn-warning">Click one</button>
+                          <button class="btn btn-info">Click Two</button>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                          <h4>Work</h4>
+                          <span class="glyphicon glyphicon-hand-left"></span>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia doloribus nesciunt optio consequuntur, esse tempora ratione voluptatibus ea unde voluptatem, assumenda eligendi asperiores iure sit cum mollitia maiores nulla similique?</p>
+                          <button class="btn btn-dark">Click one</button>
+                          <button class="btn btn-light">Click Two</button>
+                          <button class="btn btn-link">Click Two</button>
+                    </div>
+                  </div>
+              </div>
+          </div>
+    

@@ -1,0 +1,185 @@
+Traversing :-
+
+---------------------------
+Part one :-
+
+/*Example pearnt()*/
+$(document).ready(function(){
+    $(".p1").parent().css("border","1px solid #000");
+    $(".p2").parent().css("border","1px solid #000");
+
+
+    $(".father2").parent().css({"border":"1px solid #080",
+                                  "padding" : "10px"})
+});
+
+/*Example parents()*/
+$(document).ready(function(){
+  $(".p1").parents(".allFather").css("border","1px solid #000");
+  //Parents : add parameters
+});
+
+
+/*Example parentsUntil()*/
+$(document).ready(function(){
+  $(".p1").parentsUntil("body").css("border","2px solid #000");
+
+
+  $(".allFather").css("padding","10px")
+});
+---------------------------
+part Two :
+1- children()
+
+$(document).ready(function(){
+    $(".allFather").children(".hamam").css("color","red")
+});
+
+2- find()
+
+/*
+Part Two:
+1- children();
+2- find();
+*/
+$(document).ready(function(){
+    $("div").find("p").css("color","red");
+});
+---------------------------
+part Three :
+
+1- siblings()
+Example one:
+$(document).ready(function(){
+    /*sibling*/
+    $(".span2").siblings().css("color","red");
+});
+
+Example Two:
+$(document).ready(function(){
+    /*sibling*/
+    $(".p1").siblings().css("backgroundColor","red");
+});
+
+Example three:
+
+$(document).ready(function(){
+    $(".p2").siblings().css("backgroundColor","red")
+});
+
+2- next()
+$(document).ready(function(){
+    /*next , nextAll, nextUntil*/
+    $(".span5").next().css("color","red");
+});
+3- nextAll()
+$(document).ready(function(){
+    /*next , nextAll, nextUntil*/
+    $(".span5").nextAll().css("color","red");
+});
+4- nextUntil()
+
+$(document).ready(function(){
+    /*next , nextAll, nextUntil*/
+    $(".span5").nextUntil(".span8").css("color","red");
+});
+5- prev() ---- {prevuios}
+
+$(document).ready(function(){
+    /* prev, prevAll, prevUntil*/
+    $(".span5").prev().css("color","red");
+});
+
+6- prevAll()
+$(document).ready(function(){
+    /* prev, prevAll, prevUntil*/
+    $(".span5").prevAll().css("color","red");
+});
+7- prevUntil()
+
+$(document).ready(function(){
+    /* prev, prevAll, prevUntil*/
+    $(".span5").prevUntil(".span1").css("color","red");
+});
+-----------------------
+part For :-
+1- First();
+$(document).ready(function(){
+    $("p").first().css("color","red");
+});
+2- last()
+$(document).ready(function(){
+    $("p").last().css("color","red");
+});
+3- Eq(index)
+$(document).ready(function(){
+    $("h2").eq(0).css("color","red");
+});
+4- fillter()
+------
+a- class
+$(document).ready(function(){
+    /*Class*/
+    $("p").filter(".h").css("background-color", "yellow");
+});
+b- object
+$(document).ready(function(){
+    /*object*/
+    $("p").filter($(".h")).css("background-color", "yellow");
+});
+c- function
+
+$(document).ready(function(){
+    /*function*/
+    $("p").filter(function(e){return e === 1 || e === 2}).css("background-color", "yellow");
+});
+
+d- multiClass
+$(document).ready(function(){
+    /*multiClass*/
+    $("p,span").filter(".span3,.h").css("background-color", "yellow");
+});
+e- contains
+number
+$(document).ready(function(){
+    /*multiClass*/
+    $("p").filter(":contains('6')").css("background-color", "yellow");
+});
+
+$(document).ready(function(){
+    /*multiClass*/
+    $("p").filter(":contains('hamam Sabbah')").first().css("background-color", "yellow");
+});
+
+5- not()
+
+a- class
+$(document).ready(function(){
+    /*class*/
+    $("p").not(".h").css("backgroundColor","red");
+});
+b- object
+$(document).ready(function(){
+    /*class*/
+    $("p").not($(".h")).css("backgroundColor","red");
+});
+c- function
+
+$(document).ready(function(){
+    /*class*/
+    $("p").not(function(ameer){return ameer === 0}).css("backgroundColor","red");
+});
+
+d- multiClass
+
+$(document).ready(function(){
+    /*class*/
+    $("p,span").not(".span3,.h").css("backgroundColor","red");
+});
+
+e- Contains
+$(document).ready(function(){
+    /*class*/
+    $("p").not(":contains('6')").css("backgroundColor","red");
+});
+-----------------------

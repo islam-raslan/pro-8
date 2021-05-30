@@ -1,0 +1,181 @@
+Event Window :-
+
+1-Srcoll
+Example On Syntax :-
+
+$(document).ready(function(){
+    $(window).on("scroll",function(){
+        console.log("Hello");
+    });
+});
+------------------------
+a- scrollTop()
+
+
+$(document).ready(function(){
+    
+    $(window).on("scroll",function(){
+        if($(window).scrollTop() > 600){
+            $("div:nth-of-type(3)").slideDown(3000)
+        }
+    });
+});
+
+
+b- offset()
+1- top
+2- left
+Two Syntax (Function):-
+First Syntax:-
+A- offset().top--------------------------> get me scroll to top in Element
+B- offset().left ------------------------->  get me scroll to left in Element
+Example one:-
+$(document).ready(function(){
+   var x =  $(".d2").offset().top;
+   console.log(x); 
+   $(window).on("scroll",function(){
+       console.log($(window).scrollTop());
+   });
+});
+
+Example Two:-
+$(document).ready(function(){
+
+
+    console.log($(".d2").offset().top - $(".d2").innerHeight() + 100);
+
+   $(window).on("scroll",function(){
+       console.log($(window).scrollTop());
+       if($(window).scrollTop() > $(".d2").offset().top - $(".d2").innerHeight()){
+
+        $(".d2").slideUp(4000);
+    
+    }
+   });
+
+});
+---------------------------------------------------------------------
+Secound Syntax:
+offset({
+left : ,
+top : ,
+})
+set in scroll Top and animate at pageX and pageY:-
+Example one:-
+$(document).ready(function(){
+
+    $("html").mousemove(function(e){
+        $("h1").text("pageX = "+ " "+ e.pageX + "pageY=" + "" + e.pageY);
+    });
+});
+
+Example Two:-
+$(document).ready(function(){
+
+    $("html").mousemove(function(e){
+        $("div").offset({
+            top : e.pageY,
+            left : e.pageX
+        });
+    });
+});
+------------------------------------------------------------------------------------------------------------------------------------------------
+method:-
+1-delay();
+
+syntax:
+$("Element").delay(time);
+Example:-
+$(document).ready(function(){
+    $("div").text("Hello").fadeIn(3000).delay(5000).fadeOut(2000);
+});
+
+------------------------------------------------------------------
+2-clone():-
+Example:-
+$(document).ready(function(){
+    $("p").clone().appendTo("div");
+});
+------------------------------------------------------------------
+3- each();
+Syntax:-
+
+$("element").each(function(){
+
+
+
+
+});
+Each:-
+$(document).ready(function(){
+    $("button").on("click",function(){
+        $("ul li").each(function(){
+            if($(this).hasClass('hamam')){
+                $(this).css("color","red");
+            }
+        });
+    });
+});
+----------------------------------------------------------------------------------------------------------------
+4- prop === attr
+get Attribute:-
+Example one:-
+$(document).ready(function(){
+    $("button").on("click",function(){
+      console.log($("div").prop("class"));//get
+    });
+});
+
+setAttribut :
+a- Set One attribute
+Example :-
+$(document).ready(function(){
+    $("button").on("click",function(){
+      $("div").prop("class","class2");//set
+    });
+});
+
+b- set Multi Attribute:-
+$(document).ready(function(){
+    $("button").on("click",function(){
+      $("div").prop({
+          "id" : "hamam",
+          "class" : "ali",
+          "name" : "hh"
+      });//set
+    });
+});
+Note --> What the deffrent betwen attr and prop:-
+-------------------------------------------------------------------------------------------------------------------
+5- replaceWith()
+syntax:-
+$("Element").replaceWith("Fulltag ,text,class,id");
+Example:
+$(document).ready(function(){
+    $("button").on("click",function(){
+        $("div").replaceWith("<input type='text' id ='hamam'>");
+        $(this).replaceWith("Done");
+    });
+});
+-------------------------------------------------------------------------------------------------------------------
+6- has()
+7-is()
+Example:
+$(document).ready(function(){
+    $("button").on("click",function(){
+        //has
+        if($("div").has("span")){
+            console.log("yes has span");
+        }
+
+
+
+
+        //is
+
+        if($("span").parent().is("div")){
+            console.log("yes parent is div");
+        }
+    });
+});
+-------------------------------------------------------------------------------------------------------------------

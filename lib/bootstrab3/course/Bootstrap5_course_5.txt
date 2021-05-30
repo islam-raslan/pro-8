@@ -1,0 +1,251 @@
+ <div class="btn-group" data-toggle="buttons">
+           <label class="btn btn-info"><input type="checkbox" checked>Chiked one</label>
+           <label class="btn btn-info"><input type="checkbox">Chiked Two</label>
+           <label class="btn btn-info"><input type="checkbox">Chiked Three</label>
+       </div>
+----------------------------------------------------------------------------------------------------
+<div class="container-fluid text-center">
+         <h1>Table</h1>
+         <div class="row">
+             <div class="col-xs-12">
+                <table class="table table-bordered table-hover table-condensed">
+
+                    <thead>
+                        <tr class="info">
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+         
+                    <tbody>
+                        <tr class="success">
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                        </tr>
+                        <tr class="warning">
+                         <th>5</th>
+                         <th>6</th>
+                         <th>7</th>
+                         <th>8</th>
+                     </tr>
+                     <tr class="danger">
+                         <th>9</th>
+                         <th>10</th>
+                         <th>11</th>
+                         <th>12</th>
+                     </tr>
+                    </tbody>
+                </table>
+             </div>
+         </div>
+     </div>
+--------------------------------------------------------------------------------------------------------------
+
+<div class="container  text-center">
+          <h1>form</h1>
+          <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+                        <div class="col-ms-6">
+                            <form class="form-block">
+                                <div class="form-group">
+                                    <label> first name</label>
+                                    <input type="text" placeholder="first name" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label> last name</label>
+                                    <input type="text" placeholder="last name" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label> passowrd </label>
+                                    <input type="password" placeholder="password" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label> rewrite</label>
+                                    <input type="password" placeholder="rewrite" class="form-control">
+                                </div>
+                            </form>
+
+
+
+                            <div class="fc container btn-groub " data-toggle="buttons">
+
+                                <label class="btn btn-info"> <input type="checkbox" checked>one</label>
+                                <label class="btn btn-warning"> <input type="checkbox" checked>tow</label>
+                                <label class="btn btn-danger"> <input type="checkbox" checked>three</label>
+                            
+                            
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+        </div>
+      </div>
+---------------------------------------------------------------------------------------------------------
+  <div class="container-fluid text-center">
+         <h1>Table</h1>
+         <div class="row">
+             <div class="col-xs-12">
+                <table class="table table-bordered table-hover table-condensed">
+
+                    <thead>
+                        <tr class="info">
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>City</th>
+                        </tr>
+                    </thead>
+         
+                    <tbody>
+                        <tr class="success">
+                            <th>One</th>
+                            <th>Hamam Sabbah</th>
+                            <th>20</th>
+                            <th>Tulkarm</th>
+                        </tr>
+                        <tr class="warning">
+                         <th>5</th>
+                         <th>6</th>
+                         <th>7</th>
+                         <th>8</th>
+                     </tr>
+                     <tr class="danger">
+                         <th>9</th>
+                         <th>10</th>
+                         <th>11</th>
+                         <th>12</th>
+                     </tr>
+                    </tbody>
+                </table>
+             </div>
+         </div>
+     </div>
+       <!--End Table-->
+       <!--Start Footer-->
+       <footer>
+           <div class="container text-center">
+               <h1>Footer</h1>
+               <div class="row">
+                   <div class="col-xs-12">
+                       <div class="row">
+
+
+                           <div class="col-md-4">
+                               <ul class="list-unstyled">
+                                   <li><a href="#">Home</a></li>
+                                   <li><a href="#">About</a></li>
+                                   <li><a href="#">Compeny</a></li>
+                                   <li><a href="#">Code</a></li>
+                                   <li><a href="#">Design</a></li>
+                                   <li><a href="#">Host</a></li>
+                                   <li><a href="#">Slution</a></li>
+                                   <li><a href="#">Sitmap</a></li>
+                                   <li><a href="#">Contact</a></li>
+                               </ul>
+                           </div>
+
+
+
+
+
+
+
+
+
+
+
+                           <div class="col-md-4">
+
+                               <div class="media">
+
+                                   <a href="#" class="pull-left">
+                                       <img src="../img/testi/img1.jpg"  width="50" height="50" class="media-object">
+                                   </a>
+
+
+                                   <div class="media-body">
+                                       <h4 class="media-heading">Media</h4>
+                                       <p>Lorem ipsum dolor sit amet consectetur</p>
+                                   </div>
+
+                                   <div class="media">
+
+                                    <a href="#" class="pull-left">
+                                        <img src="../img/testi/img1.jpg"  width="50" height="50" class="media-object">
+                                    </a>
+ 
+ 
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Media</h4>
+                                        <p>Lorem ipsum dolor sit amet consectetur</p>
+                                    </div>
+
+                                    <div class="media">
+
+                                        <a href="#" class="pull-left">
+                                            <img src="../img/testi/img1.jpg"  width="50" height="50" class="media-object">
+                                        </a>
+     
+     
+                                        <div class="media-body">
+                                            <h4 class="media-heading">Media</h4>
+                                            <p>Lorem ipsum dolor sit amet consectetur</p>
+                                        </div>
+
+
+                                         <div class="media">
+
+                                   <a href="#" class="pull-left">
+                                       <img src="../img/testi/img1.jpg"  width="50" height="50" class="media-object">
+                                   </a>
+
+
+                                   <div class="media-body">
+                                       <h4 class="media-heading">Media</h4>
+                                       <p>Lorem ipsum dolor sit amet consectetur</p>
+                                   </div>
+
+
+                               </div>
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <h4>Contact Us</h4>
+                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur odio provident veritatis eaque corporis eum, rem dicta molestiae fuga doloremque quos impedit at expedita minus corrupti ullam assumenda aut iure.</p>
+               </div>
+
+
+           </div>
+       </footer>

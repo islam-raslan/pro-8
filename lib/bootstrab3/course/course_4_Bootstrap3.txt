@@ -1,0 +1,161 @@
+Example Testimonuals:
+<div class="testimonials text-center">
+    <h1>Testmonials</h1>
+    <div class="container">
+       <div class="carousel slide " id="test">
+        <div class="carousel-inner">
+
+            <div class="item active">
+               <h2>Aysar</h2>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores veniam in possimus dolorem sint consequuntur sed culpa obcaecati, suscipit deserunt mollitia facilis error tenetur soluta dolore sit doloremque aperiam.</p>
+            </div>
+
+            <div class="item">
+                <h2>Ameer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores veniam in possimus dolorem sint consequuntur sed culpa obcaecati, suscipit deserunt mollitia facilis error tenetur soluta dolore sit doloremque aperiam.</p>
+            </div>
+
+            <div class="item">
+                <h2>Frah</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores veniam in possimus dolorem sint consequuntur sed culpa obcaecati, suscipit deserunt mollitia facilis error tenetur soluta dolore sit doloremque aperiam.</p>
+            </div>
+            <div class="item">
+                <h2>Tujan</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores veniam in possimus dolorem sint consequuntur sed culpa obcaecati, suscipit deserunt mollitia facilis error tenetur soluta dolore sit doloremque aperiam.</p>
+            </div>
+            <div class="item">
+                <h2>Ez</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores veniam in possimus dolorem sint consequuntur sed culpa obcaecati, suscipit deserunt mollitia facilis error tenetur soluta dolore sit doloremque aperiam.</p>
+            </div>
+            <div class="item">
+                <h2>Islam</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores veniam in possimus dolorem sint consequuntur sed culpa obcaecati, suscipit deserunt mollitia facilis error tenetur soluta dolore sit doloremque aperiam.</p>
+            </div>
+            <div class="item">
+                <h2>Hamam</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolores veniam in possimus dolorem sint consequuntur sed culpa obcaecati, suscipit deserunt mollitia facilis error tenetur soluta dolore sit doloremque aperiam.</p>
+            </div>
+
+        </div>
+
+        <a href="#test" class="carousel-control left" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a href="#test" class="carousel-control right" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+       </div>
+       </div>
+</div>
+-------------------------------------------------------------------------------------------------------------------------------------------------
+Example : Courses:-
+ <div class="courses text-center">
+           <div class="container">
+               <h1>My Courses</h1>
+               <div class="row">
+                   <div class="col-xs-12">
+                       <div class="row">
+                           <div class="Deep col-md-3">
+                               <h2 class="text-success">FrontEnd</h2>
+                               <img src="../img/testi/img1.jpg" width="50" height="50" class="img-circle">
+                               <ul class="list-unstyled">
+                                   <li>HTML</li>
+                                   <li>Css</li>
+                                   <li>Js</li>
+                                   <li>Bootstrap</li>
+                                   <li>React.js</li>
+                                   <li>Gulp.js</li>
+                               </ul>
+                               <button class="btn btn-success">Buy</button>
+                           </div>
+                           <div class="Deep col-md-3 col-md-push-1">
+                               <h2 class="text-warning">BackEnd</h2>
+                               <img src="../img/testi/img1.jpg" width="50" height="50" class="img-circle">
+                               <ul class="list-unstyled">
+                                   <li>Php</li>
+                                   <li>Node.js</li>
+                                   <li>Ruby</li>
+                                   <li>Sql</li>
+                                   <li>Asp</li>
+                                   <li>My Sql</li>
+                               </ul>
+                               <button class="btn btn-warning">Buy</button>
+                           </div>
+                           <div class="Deep col-md-3 col-md-push-2">
+                               <h2 class="text-info">Android</h2>
+                               <img src="../img/testi/img1.jpg" width="50" height="50" class="img-circle">
+                               <ul class="list-unstyled">
+                                   <li>Java</li>
+                                   <li>React.js</li>
+                                   <li>Kotlin</li>
+                                   <li>C#</li>
+                                   <li>Pug.js</li>
+                                   <li>C++</li>
+                               </ul>
+                               <button class="btn btn-info">Buy</button>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+--------------------------------------------------------------------
+Example Eorm:-
+<!--Simble Form-->
+       <div class="subscribe text-center">
+           <div class="container">
+               <h1>Keep In touch</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio corporis eum modi</p>
+               <form class="form-inline">
+                   <input type="text" class="form-control input-lg">
+                   <button class="btn btn-success btn-lg">Click</button>
+               </form>
+           </div>
+       </div>
+       <!--End Form-->
+-----------------------------------------------------------------------
+Example :-
+
+ <!--Strat Progress-->
+       <div class="Skills text-center">
+           <div class="container">
+               <h1>Skills</h1>
+               <div class="row">
+                   <div class="col-xs-12">
+                       <div class="row">
+                           <div class="col-md-6 prog">
+                               <div class="progress">
+                                   <div class="progress-bar progress-bar-success progress-bar-striped active" role="prgressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" style="width: 80%;">
+                                    HTML5 80%
+                                   </div>
+                               </div>
+
+                               <div class="progress">
+                                <div class="progress-bar progress-bar-info progress-bar-striped active" role="prgressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" style="width: 90%;">
+                                 CSS3 90%
+                                </div>
+                            </div>
+
+                              <div class="progress">
+                                <div class="progress-bar progress-bar-warning progress-bar-striped active" role="prgressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" style="width: 90%;">
+                                 Js 90%
+                                </div>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-dark progress-bar-striped active" role="prgressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" style="width: 100%;">
+                                 React 100%
+                                </div>
+                            </div>
+
+
+
+                           </div>
+                           <div class="col-md-5 col-md-offset-1">
+                               <h2>Par</h2>
+                               <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus porro laudantium accusamus quia voluptate adipisci ratione nisi totam! Error soluta nihil ex sunt consectetur harum consequuntur expedita a veritatis culpa?</p>
+                          </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <!--End Progress-->
+-----------------------------------------------------------------------------------------------------------------------------------------------------

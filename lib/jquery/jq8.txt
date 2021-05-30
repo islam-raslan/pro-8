@@ -1,0 +1,350 @@
+Select Refrance :-
+1- star * ---> all
+
+// Select All Element (Html Head Body)
+Example -
+$(document).ready(function(){
+    $("*").css("backgroundColor","red");
+});
+
+2- body + Star
+// Select All Element inside body
+Example ---
+$(document).ready(function(){
+
+    $("body *").css("backgroundColor","red");
+    
+});
+-------------------------------------------------------------------
+3- class
+-----
+
+a- Group Class
+
+$(document).ready(function(){
+
+    $(".first,.secound,.theard,.forth").css("backgroundColor","red");
+
+});
+
+
+b- Group Class and tag
+
+$(document).ready(function(){
+
+    $(".first,.secound,.theard,.forth,span,h1,h2,h3,h4").css("backgroundColor","red");
+
+});
+
+c- Nesting Class
+
+$(document).ready(function(){
+    $(".all .child1 .chaild2 p").css("color","red");
+});
+
+----
+4- id
+
+a- group id 
+$(document).ready(function(){
+
+    $("#first,#secound,#theard,#forth").css("backgroundColor","red");
+
+});
+
+b- group id and tag
+$(document).ready(function(){
+
+    $("#first,#secound,#theard,#forth,span,h1,h2,h3,h4").css("backgroundColor","red");
+
+});
+c- Nesting id
+$(document).ready(function(){
+    $("#all #child1 #chaild2 p").css("color","red");
+});
+
+-----------------------
+5- tag Name
+
+a- group tag name
+
+$(document).ready(function(){
+
+    $("span,h1,h2,h3,h4").css("backgroundColor","red");
+
+});
+b- nesting tag name 
+
+$(document).ready(function(){
+
+    $("div h1 p").css("backgroundColor","red");
+
+});
+
+------------------------------------------------------------------------------------------------------------------------------
+first ----- last
+
+$(document).ready(function(){
+
+    $("ul li:first").css("color","red");
+    $("ul li:last").css("color","blue");
+
+});
+
+
+--------------------------------------------------------------------------
+odd ---------- even
+
+$(document).ready(function(){
+
+    $("ul li:odd").css("color","red");
+    $("ul li:even").css("color","blue");
+    
+});
+----------------------------------------------------------------------------------------
+HTML :-
+<div class="all">
+            <p>this is p one</p>
+            <span>This is span</span>
+            <h1>This is title</h1>
+            <span>This is span 2</span>
+            <p>This is p2</p>
+            <div>This is div one Child</div>
+            <p>This is p3</p>
+            <div>This is div two Child</div>
+        </div>
+
+-------------------------------------------------------------------------------------------------------------------------------
+1-first-child
+Example one :-
+
+$(document).ready(function(){
+    $(".all p:first-child").css("color","red");
+});
+
+last-child
+EXample :-
+
+$(document).ready(function(){
+    $(".all p:last-child").css("color","red");
+});
+
+nth-child(length)
+
+Example :-
+$(document).ready(function(){
+    $(".all p:nth-child(5)").css("color","red");
+});
+
+nth-last-child()
+
+$(document).ready(function(){
+    $(".all p:nth-last-child(3)").css("color","red");
+});
+---------------------------------------------------------------------------------------------------------------------------
+first-of-type
+Example:-
+$(document).ready(function(){
+
+    $(".all p:first-of-type").css("color","red");
+    
+});
+last-of-type
+Example :-
+$(document).ready(function(){
+
+    $(".all p:last-of-type").css("color","red");
+
+});
+nth-of-type(length)
+Example :-
+$(document).ready(function(){
+
+    $(".all p:nth-of-type(3)").css("color","red");
+
+});
+
+nth-last-of-type(length)
+
+Example:-
+
+$(document).ready(function(){
+
+    $(".all p:nth-last-of-type(2)").css("color","red");
+
+});
+-------------------------------------------------------------------------------------------------------------------------
+HTML:
+
+<p>only child</p>
+        <div class="onlyChild">
+            <p>This is p only child</p>
+        
+        </div>
+
+
+
+
+
+
+        <p>only-of-type</p>
+        <div class="only-of-type">
+            <p>This is p only of type</p>
+        </div>
+
+
+----
+only-child:
+$(document).ready(function(){
+
+ $(".onlyChild p:only-child").css("color","red");
+ //must only tag but Watch notes not inside diffrent type of tag  
+
+});
+only-of-type:
+$(document).ready(function(){
+
+ $(".onlyChild p:only-child").css("color","red");
+ //must only tag but Watch notes not inside diffrent type of tag  
+ $(".only-of-type p:only-of-type").css("color","blue");
+});
+----------------------------------------------------------------------------------------------
+Example one:-
+<div class="all">
+
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+
+        </div>
+Example two:-
+<div class="all">
+
+<p>123123214213</p> <!--This is direct child .all-->
+
+<div class="child 1">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+</div>
+
+<p>12312431241412</p> <!--This is direct child .all-->
+<div class="child2">
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+</div>
+
+
+<p>12312341</p> <!--This is direct child .all-->
+        </div>
+--------------------
+1- direct-child
+a- (element>element)
+Example one :-
+$(document).ready(function(){
+
+    $(".all>p").css("color","red");
+});
+2- Example two:-
+
+$(document).ready(function(){
+
+    $(".all>p").css("color","red");
+});
+
+
+b- (element element)
+Example one:-
+$(document).ready(function(){
+
+    $(".all p").css("color","red");
+});
+Example Two:-
+$(document).ready(function(){
+
+    $(".all p").css("color","red");
+});
+-------------------------------------------------
+Next --->(+)
+
+HTML:-
+<div class="all">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+        </div>
+
+        <p>This is p out side div next</p>
+        
+        <p>This is p out side div next</p>
+
+Example:-
+$(document).ready(function(){
+
+    $(".all + p").css("color","red");
+
+});
+---------------------------------------------------------
+Siblings -------------------> (~)
+
+<p>This is p out side div sibling</p>
+        
+        <p>This is p out side div sibling</p>
+
+        <div class="all">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+        </div>
+
+        <p>This is p out side div siblibg</p>
+
+        <p>This is p out side div siblibg</p>
+
+Example :-
+
+$(document).ready(function(){
+
+    $(".all ~ p").css("color","red");
+
+});
+-------------------------------------------------------------------------------------------------------------
+1- eq() Equntite
+Example one:
+$(document).ready(function(){
+
+    $("ul li:eq(3)").css("color","red");
+
+});
+2- gt() grater than
+Example one:-
+$(document).ready(function(){
+
+    $("ul li:gt(3)").css("color","red");
+
+});
+3- lt() list than 
+Example one:-
+$(document).ready(function(){
+
+    $("ul li:lt(5)").css("color","red");
+
+});

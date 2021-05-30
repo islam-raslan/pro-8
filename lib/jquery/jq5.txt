@@ -1,0 +1,190 @@
+- Effect
+1- Remove()--->dellat text and Element (tag) 
+2- Empty() --->dellat text not Element
+
+Example Remove:-
+<div>this is div1 </div>
+  <button>Remove</button>
+  <style>
+      div{
+          width: 200px;
+          height: 50px;
+          background-color: brown;
+      }
+  </style>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").remove();
+    });
+});
+
+
+Example Empty:
+  <div>this is div1 </div>
+  <button>Empty</button>
+  <style>
+      div{
+          width: 200px;
+          height: 50px;
+          background-color: brown;
+      }
+  </style>
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").empty();
+    });
+});
+------------------------------
+-class with Jquery
+1- addClass()
+2- removeClass()
+3- toggleClass()
+
+Example For all:
+   <div class="all">
+
+         <div class="class1">
+
+         </div>
+         
+         <div class="class2">
+
+         </div>
+
+     </div>
+        <button class="btn1">addClass</button>
+        <button class="btn2">RemoveClass</button>
+        <button class="btn3">toggleClass</button>
+  <style>
+    .all{
+        width: 100%;
+        height: 300px;
+        background-color: chartreuse;
+    }  
+    .class1{
+        width: 50%;
+        height: 100%;
+        background-color: cornflowerblue;
+    }
+    .class2{
+        width: 50%;
+        height: 100%;
+        background-color: red;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    }
+  </style>
+$(document).ready(function(){
+    //AddCLass
+    $(".btn1").click(function(){
+        $(".class1").addClass("left");
+        $(".class2").addClass("right");
+    });
+    //RemoveClass
+    $(".btn2").click(function(){
+        $(".class1").removeClass("left");
+        $(".class2").removeClass("right");
+    });
+    //toggleClass
+    $(".btn3").click(function(){
+        $(".class1").toggleClass("left");
+        $(".class2").toggleClass("right");
+    });
+});
+------------------------------------------------------------------------------------
+Set And Get Css with JQuery :-
+Example one:-
+
+        <div class="all">
+            This is div all
+        </div>
+        <button class="btn1">Get Css</button>
+        <button class="btn2">Set Css One Animate</button>
+        <button class="btn3">Set Css Multi Animate</button>
+        <style>
+            .all{
+                width: 500px;
+                height: 100px;
+                background-color: cornflowerblue;
+            }
+        </style>
+
+
+
+$(document).ready(function(){
+    //Get Css
+    var myAll = $(".all");
+   $(".btn1").click(function(){
+    console.log(myAll.css("background-color"));
+   });
+   //Set Css one Animate
+   $(".btn2").click(function(){
+       myAll.css("background-color","red");
+   });
+   //Set Multi css
+   $(".btn3").click(function(){
+       myAll.css({
+           "color" : "white",
+           "background-color" : "green",
+           "padding" : "20px",
+           "margin-top" : "100px",
+           "transform" : "translateX(520px)",
+           "transition" : "all 5s ease-in-out"
+       })
+   });
+});
+
+Example Two:
+
+<input type="text" class="type1" placeholder="Color">
+<input type="text" class="type2" placeholder="background">
+<input type="text" class="type3" placeholder="Font-size">
+<input type="text" class="type4" placeholder="border">
+<p class="p1">this is p1</p>
+<p class="p2">this is p2</p>
+<p class="p3">this is p3</p>
+<p class="p4">this is p4</p>
+<button class="btn1">Color</button>
+<button class="btn2">BackGround</button>
+<button class="btn3">Font-size</button>
+<button class="btn4">border</button>
+        <style>
+           input{
+               width: 250px;
+               height: 50px;
+               text-align: center;
+               background-color: cornflowerblue;
+               border-radius: 10px;
+               margin-bottom: 10px;
+               border: none;
+           }
+        </style>
+
+
+$(document).ready(function(){
+
+    $(".btn1").click(function(){
+     var valueColor = $(".type1").val();
+     $(".p1").css("color",valueColor);
+    });
+    
+    $(".btn2").click(function(){
+       var valueBackGround = $(".type2").val();
+       $(".p2").css("background-color",valueBackGround);
+    });
+
+    $(".btn3").click(function(){
+        var valueSize = $(".type3").val();
+        $(".p3").css("font-size",valueSize)
+    });
+    $(".btn4").click(function(){
+        var valueBorder = $(".type4").val();
+        $(".p4").css("border",valueBorder)
+    });
+});
+------------------------------------------------------------------------------------------------------------

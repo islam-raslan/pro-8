@@ -1,0 +1,269 @@
+Select Refrance:-
+1-(:hidden) 2-(:visible).
+Whats the deffrant betwen in :----
+
+synatx :
+$("Element:hidden");
+$("Element:visible");
+Example:-
+$(document).ready(function(){
+   $("button").on("click",function(){
+       $("div:hidden").slideToggle(3000);
+       $("div:visible").slideToggle(3000);
+   });
+});
+-------------------------------------------------------------------------------------------
+Select Refrance Attribute
+
+1- only name attribute
+$(document).ready(function(){
+    $("[type]").css("backgroundColor","red");
+});
+
+2- attribute and name value
+
+$(document).ready(function(){
+    $("[type = 'text']").css("backgroundColor","red");
+});
+
+
+
+
+
+-----------------------------------------------
+==============================================
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+Event on Jquery Advance --------------- (bind,on)
+-----------------------------------------------------------------------------
+Leavel one :-
+ 
+Syntax :-
+$(body, document, this).on("Event","Elemnt(Child)",function(){
+
+
+
+
+})
+Example one:-
+
+$(document).ready(function(){
+
+    $(this).on("click","p",function(){
+
+        $(this).hide(3000);
+        
+    });
+
+});
+----------
+Leavel two:-
+Syntax :- 
+
+$("Element").on("single Event",function(){
+
+
+})
+
+Example:-
+
+$("p").on("click",function(){
+        $(this).hide(3000);
+    });
+----
+$("Element").on("EventOne EventTwo",function(){
+
+
+})
+Example:-
+$("p").on("mouseover mouseout",function(){
+       $(this).toggleClass("hamam");
+    });
+
+--------------------------------------------------------------------------------
+Leavel three:-
+-For Multi Event:-
+Syntyax :-
+
+$("Element").on({EventOne : function(){},
+                 EventTwo : function(){},
+                 EventThree : function(){}});
+
+Example :-
+
+$(document).ready(function(){
+
+    
+    $("p").on({click : function(){
+        $(this).css("color","red");
+    },
+               dblclick : function(){
+                   $(this).css("backgroundColor","blue");
+               },
+               mouseout : function(){
+                   $(this).hide(4000);
+               }})
+});
+------------------------------------------------------------------------------------------
+leavl For :-
+Coustem Event With on:-
+
+Syntax :-
+$("Element").on("NameEvant",function(event,par1,par2,par3,par4){
+
+
+Code;
+
+})
+
+
+Send To trigger:-
+
+$(document).ready(function(){
+    $("p").on("Ayser",function(event,mWidth,mHeight,backColor,mColor){
+        $(this).width(mWidth).height(mHeight);
+        $(this).css({
+            backgroundColor : backColor,
+            color : mColor
+        })
+    });
+
+    $("button").on("click",function(){
+        $("p").trigger("Ayser",["400px","500px","blue","red"]);
+    })
+});
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Refrance prevent :- 
+preventDefault() & isDefaultprevented();
+
+Example:-
+
+$(document).ready(function(){
+    $("a").on("click",function(e){
+        e.preventDefault();
+        $("div").slideUp(3000);
+
+        if(e.isDefaultPrevented()){
+            console.log("yes");
+        }else{
+            console.log("no");
+        }
+    });
+});
+------------------------------------------------------------------------------------------------------------------------------------------------
+Event Refrance :-
+[keyDown,keyUp,keyPress];
+
+$(document).ready(function(){
+
+    $("input").on("keydown",function(){
+        var tVal;
+        tVal = $("input").val();
+        $(".class1").text(tVal);
+    });
+
+
+
+    
+    $("input").on("keyup",function(){
+        var tVal;
+        tVal = $("input").val();
+        $(".class2").text(tVal);
+    });
+
+
+
+
+    $("input").on("keypress",function(){
+        var tVal;
+        tVal = $("input").val();
+        $(".class3").text(tVal);
+    });
+});
+note:
+Whate the defrant betwen on (Key width j query)?
+-----------------------------------------------------------------------------------------------------------------------------------
+one :-- 
+Synatx:-
+$(element).one("Event",function(){
+
+});
+Example :-
+$(document).ready(function(){
+   $("p").one("click",function(){
+       $(this).animate({
+           "font-size" : "+=10px"
+       });
+   });
+});
+$(element).one("Eventone EventTwo",function(){
+
+});
+Example
+$(document).ready(function(){
+   $("p").one("click dblclick",function(){
+       $(this).animate({
+           "font-size" : "+=10px"
+       });
+   });
+});
+-----------------------------------------------------------------------------------------------------------------------------------------------
+EventRefrance ----> select;
+Example :-
+$(document).ready(function(){
+
+ $("textarea").on("click",function(){
+     $(this).select();
+ });
+ 
+});
+
+Example :-
+$(document).ready(function(){
+
+ $("textarea").on("click",function(){
+     $(this).select(function(){
+         $(this).css("backgroundColor","red");
+     });
+ });
+
+});
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Event Refrance ------------- window
+1- resize
+
+$(window).on("resize",function(){
+
+
+});
+Example:-
+$(document).ready(function(){
+    $("div").width($(document).width());
+    $("div").height($(document).height());
+    $(window).on("resize",function(){
+        $("div").width($(document).width());
+        $("div").height($(document).height());
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
